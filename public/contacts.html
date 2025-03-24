@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecure Hub</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">CyberSecure Hub</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">Security Tips</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel Section Below Navbar -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Slide 1.jpg" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption">
+              <h3>Stay Safe Online</h3>
+              <p>Learn how to protect yourself from cyber threats.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Slide 2.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="Slide 3.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <main class="container mt-5">
+        <section id="about">
+            <h2>About Cybersecurity</h2>
+            <p>Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are aimed at accessing, changing, or destroying sensitive information, extorting money, or disrupting normal business processes.</p>
+        </section>
+
+        <section id="services" class="mt-5">
+            <h3 class="text-center">Security Tips</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Password Security.png" class="card-img-top" alt="Password Security">
+                        <div class="card-body">
+                            <h5 class="card-title">Use Strong Passwords</h5>
+                            <p class="card-text">Create complex passwords and enable two-factor authentication for added security.</p>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#password-info">Learn More</button>
+                            <div id="password-info" class="collapse mt-2">
+                                <p>Use at least 12 characters, including upper and lowercase letters, numbers, and symbols. Avoid using the same password for multiple accounts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Phishing Scams.avif" class="card-img-top" alt="Phishing Scams">
+                        <div class="card-body">
+                            <h5 class="card-title">Avoid Phishing Scams</h5>
+                            <p class="card-text">Be cautious of suspicious emails and links that may try to steal your information.</p>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#phishing-info">Learn More</button>
+                            <div id="phishing-info" class="collapse mt-2">
+                                <p>Never click on unverified links, and always check the sender's email address. Use email filters and report suspicious messages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Network Security.jpg" class="card-img-top" alt="Network Security">
+                        <div class="card-body">
+                            <h5 class="card-title">Secure Your Network</h5>
+                            <p class="card-text">Use a firewall and keep your software up to date to protect against cyber threats.</p>
+                            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#network-info">Learn More</button>
+                            <div id="network-info" class="collapse mt-2">
+                                <p>Enable WPA3 encryption for Wi-Fi, disable unused services, and regularly update router firmware to prevent vulnerabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="resources" class="mt-5">
+            <h3 class="text-center">Cybersecurity Resources</h3>
+            <ul>
+                <li><a href="#">Latest Cybersecurity News</a></li>
+                <li><a href="#">Online Security Courses</a></li>
+                <li><a href="#">Cybersecurity Best Practices Guide</a></li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mt-5 text-center">
+            <section id="contact" class="mt-5 text-center">
+                <h3>Contact Us</h3>
+                <p>If you have any cybersecurity concerns or need assistance, reach out to us.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Get in Touch</button>
+            </section>
+        </main>
+        
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Us</h5>
+              <p>CyberSecure Hub is dedicated to providing the latest cybersecurity news, tips, and best practices.</p>
+            </div>
+            <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">Security Tips</a></li>
+                <li><a href="#" class="text-white">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center">
+              <h5>Follow Us</h5>
+              <a href="#" class="text-white me-2">Facebook</a>
+              <a href="#" class="text-white me-2">Twitter</a>
+              <a href="#" class="text-white">LinkedIn</a>
+            </div>
+          </div>
+          <hr>
+          <p class="text-center">&copy; 2025 CyberSecure Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
